@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("loadded");
+        document
+          .getElementById("menuBtn")
+          .addEventListener("click", function () {
+            console.log("clicked");
+            document.querySelector("ul").classList.toggle("hidden");
+          });
+      });
+    </script>
+  </head>
+  <body style="background-color: #f8f9fa" class="content-container">
+    <div
+      style="position: sticky; top: 0; background-color: black; z-index: 1"
+      class="content-center w-[100%] lg:content-center w-[100%] sm:w-fill grid grid-col-1 sm:bg-white"
+    >
+      <nav class="flex px-4 bg-white sm:flex w-full lg:w-full mx-0">
+        <a href="#"> <img src="./images/Logo.svg" class="mt-6 w-[171px]" /></a>
+        <div class="sm:flex w-full">
+          <ul
+            class="hidden md:w-full pr-16 space-x-4 sm:grid grid-col-1 sm:flex"
+          >
+            <ul class="lg:flex sm;flex w-full">
+              <li
+                class="flex rounded-full border-2 lg:w-96 h-12 mt-4 ml-auto mr-auto sm:w-32"
+                style="background-color: white; border-color: #dee2e6"
+              >
+                <input
+                  type="text"
+                  id="mySearch"
+                  placeholder="Search"
+                  class="rounded-full lg:w-96 pl-4 outline-none"
+                />
+                <img
+                  src="./images/Icon Button (2).svg"
+                  class="pr-1 w-12 h-[40px] pt-1"
+                />
+              </li>
+
+              <li>
+                <button
+                  style="
+                    font-family: inter;
+                    color: white;
+                    background-color: #7749f8;
+                  "
+                  class="font-semibold text-base px-4 mt-5 rounded py-2"
+                >
+                  Open Shop
+                </button>
+              </li>
+              <li>
+                <button
+                  style="
+                    font-family: inter;
+                    color: black;
+                    background-color: white;
+                  "
+                  class="font-semibold text-base px-4 mt-5 rounded py-2"
+                >
+                  Contact
+                </button>
+              </li>
+              <li>
+                <button class="mt-5">
+                  <img src="./images/Icon Button.svg" />
+                </button>
+              </li>
+            </ul>
+
+            <!----second navbar--->
+            <div class="w-full">
+              <div class="mx-0 w-full">
+                <ul
+                  class="sm:grid grid-col-2 lg:flex py-3 mt-6 items-center justify-center"
+                  style="background-color: black; position: sticky"
+                >
+                  <li>
+                    <a href="#">
+                      <p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 sm:pl-4 pl-4"
+                      >
+                        Pet Stores
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Products
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Vets
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Training
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Grooming
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Buy & Sell
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p
+                        style="font-family: inter; color: white"
+                        class="font-normal text-base leading-7 ml-10"
+                      >
+                        Adopt
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+          <button
+            id="menuBtn"
+            class="md:hidden row-flex focus:outline-none pr-4 mt-4"
+            style="float: right"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!--first banner---->
+    <div class="">
+      <div class="sm:flex-row lg: flex flex-col items-center bg-white">
+        <div class="ml-8 mt-auto mb-auto">
+          <p
+            style="font-family: inter; color: black"
+            class="font-bold text-4xl mb-4 mt-4 sm:mt-4"
+          >
+            Everything Your Pet Desires, All in One Place.
+          </p>
+          <p
+            style="color: #212529"
+            class="font-family: inter font-normal text-xl leading-9"
+          >
+            Discover a world tailored for your pet: the ultimate hub for pet
+            care essentials, from trusted stores to expert vets, grooming,
+            training, and beyond - all gathered together for your convenience.
+          </p>
+        </div>
+        <img
+          src="./images/container.svg"
+          class="lg:ml-48 mr-8 mt-16 mb-10 w-96 sm:w-[12rem]"
+        />
+      </div>
+    </div>
+
+    <div class="w-fit lg:m-auto sm:w-fit pl-auto pr-auto content-center">
+      <div style="background-color: #f8f9fa; padding-top: 32px">
+        <div class="pl-3"></div>
+        <ul
+          class="sm:grid grid-col-2 lg:flex rounded mx-5 py-4"
+          style="background-color: white"
+        >
+          <li>
+            <img
+              src="./images/Icon Box (00).svg"
+              alt=""
+              class="pl-5 ml-16 mb-4"
+            />
+            <div>
+              <a href=""
+                ><span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-5 ml-16 pt-4"
+                >
+                  Pet Stores
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (01).svg"
+              alt=""
+              class="pl-6 ml-16 mb-4"
+            />
+            <div>
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-4 ml-20"
+                >
+                  Products
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (02).svg"
+              alt=""
+              class="pl-5 ml-16 mb-4"
+            />
+            <div>
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-5 ml-24"
+                >
+                  Vets
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (03).svg"
+              alt=""
+              class="pl-5 ml-16 mb-4"
+            />
+            <div>
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-5 ml-24"
+                >
+                  Training
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (04).svg"
+              alt=""
+              class="pl-5 ml-16 mb-6"
+            />
+            <div>
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-5 ml-20"
+                >
+                  Grooming
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (05).svg"
+              alt=""
+              class="pl-5 ml-16 mb-4"
+            />
+            <div>
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-1 ml-20"
+                >
+                  Buy & Sell
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/Icon Box (06).svg"
+              alt=""
+              class="pl-5 ml-14 mb-4"
+            />
+            <div class="">
+              <a href="">
+                <span
+                  style="font-family: Inter"
+                  class="font-normal text-base leading-7 pl-5 ml-20"
+                >
+                  Adopt
+                </span>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="">
+          <div
+            class="flex sm:grid grid-col-2 lg:flex ml-8 mr-16 mb-4 mt-8 justify-between"
+          >
+            <p class="font-bold text-3xl" style="font-family: inter">
+              Pet Stores
+            </p>
+            <a href="#"
+              ><p
+                style="font-family: inter; color: #6610f2"
+                class="font-semibold text-sm mt-2"
+              >
+                View All
+              </p></a
+            >
+          </div>
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/Cover.svg" class="rounded-t-lg" />
+              <img
+                src="./images/Avatar (1).svg"
+                class="absolute mt-[-6rem] ml-4"
+              />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-12"
+                  style="font-family: inter"
+                >
+                  Store Name
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Location
+                </p></a
+              >
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/Cover.svg" class="rounded-t-lg" />
+              <img
+                src="./images/Avatar (1).svg"
+                class="absolute mt-[-6rem] ml-4"
+              />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-12"
+                  style="font-family: inter"
+                >
+                  Store Name
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Location
+                </p></a
+              >
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/Cover.svg" class="rounded-t-lg" />
+              <img
+                src="./images/Avatar (1).svg"
+                class="absolute mt-[-6rem] ml-4"
+              />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-12"
+                  style="font-family: inter"
+                >
+                  Store Name
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Location
+                </p></a
+              >
+            </div>
+
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/Cover.svg" class="rounded-t-lg" />
+              <img
+                src="./images/Avatar (1).svg"
+                class="absolute mt-[-6rem] ml-4"
+              />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-12"
+                  style="font-family: inter"
+                >
+                  Store Name
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Location
+                </p></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-16 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">Products</p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div>
+          <div class="sm:grid grid-col-2 lg:flex">
+            <div class="sm:grid grid-col-2 bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (4).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-black font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #ffc107; font-family: inter"
+                >
+                  Category
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2 w-9" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sm:grid grid-col-2 bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (4).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-black font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #ffc107; font-family: inter"
+                >
+                  Category
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2 w-9" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white mx-7 rounded-md w-fit mb-4 w-fit mb-4">
+              <img src="./images/img (4).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-black font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #ffc107; font-family: inter"
+                >
+                  Category
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (4).svg" class="rounded-t-lg" />
+              <a href="#">
+                <span
+                  class="text-black font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #ffc107; font-family: inter"
+                >
+                  Category
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-16 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">Vets</p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (1).svg" class="rounded-t-lg" />
+
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-3 ml-3 mt-4"
+                  style="font-family: inter"
+                >
+                  Vet Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6 pb-2"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (1).svg" class="rounded-t-lg" />
+
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-3 ml-3 mt-4"
+                  style="font-family: inter"
+                >
+                  Vet Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (1).svg" class="rounded-t-lg" />
+
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-3 ml-3 mt-4"
+                  style="font-family: inter"
+                >
+                  Vet Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (1).svg" class="rounded-t-lg" />
+
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-3 ml-3 mt-4"
+                  style="font-family: inter"
+                >
+                  Vet Name
+                </p></a
+              >
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-16 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">
+            Training Services
+          </p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img-dog.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img-dog.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img-dog.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img-dog.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Training Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-4 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">
+            Grooming Services
+          </p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/dog-ph.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Grooming Service Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/dog-ph.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Grooming Service Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/dog-ph.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Grooming Service Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 w-fit mb-4">
+              <img src="./images/dog-ph.svg" class="rounded-t-lg" />
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 1,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Grooming Service Name
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-16 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">Buy a Pet</p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href=""
+                ><span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-16 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">
+            Buyer Request
+          </p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="grid grid-col-1">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (3).svg" class="rounded-t-lg" />
+              <a href="">
+                <span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #7749f8; font-family: inter"
+                >
+                  For Selling
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  Rs. 15,000 – Rs. 25,000
+                </p></a
+              >
+              <a href=""
+                ><p
+                  class="font-normal text-base rounded-md pb-4 ml-3"
+                  style="font-family: inter"
+                >
+                  Golden pup
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex sm:grid grid-col-1 lg:flex pl-8 pr-20 mb-4 py-4 justify-between"
+        >
+          <p class="font-bold text-3xl" style="font-family: inter">
+            Adopt a Pet
+          </p>
+          <a href="#"
+            ><p
+              style="font-family: inter; color: #6610f2"
+              class="font-semibold text-sm mt-2"
+            >
+              View All
+            </p></a
+          >
+        </div>
+        <div class="">
+          <div class="sm:grid grid-col-1 lg:flex">
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (5).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #28a745; font-family: inter"
+                >
+                  For Adoption
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  White cat
+                </p></a
+              >
+
+              <div class="">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (5).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #28a745; font-family: inter"
+                >
+                  For Adoption
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  White cat
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-3 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (5).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #28a745; font-family: inter"
+                >
+                  For Adoption
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  White cat
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mx-7 rounded-md w-fit mb-4">
+              <img src="./images/img (5).svg" class="rounded-t-lg" />
+              <a href="#"
+                ><span
+                  class="text-white font-semibold text-xs w-fit px-2 py-1 rounded absolute mt-[-3rem] ml-3"
+                  style="background-color: #28a745; font-family: inter"
+                >
+                  For Adoption
+                </span>
+              </a>
+              <a href=""
+                ><p
+                  class="font-semibold text-xl ml-3 mt-3"
+                  style="font-family: inter"
+                >
+                  White cat
+                </p></a
+              >
+
+              <div class="flex">
+                <img src="./images/Avatar.svg" alt="" class="pl-2 sm:200px" />
+                <div class="pl-2">
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-sm leading-6"
+                      style="font-family: inter"
+                    >
+                      Owner/Store Name
+                    </p>
+                  </a>
+                  <a href="#">
+                    <p
+                      class="mt-2 font-normal text-xs mt-[-4px] leading-6"
+                      style="font-family: inter; color: #6c757d"
+                    >
+                      Location
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <div>
+            <img
+              src="./images/unsplash_2TLREZi7BUg.svg"
+              alt=""
+              class="lg:w-full sm:w-[360px] mt-8"
+            />
+          </div>
+          <div
+            class="mt-[-30rem] ml-8 absolute rounded-xl lg:w-[450px] h-[360px]"
+            style="background-color: white"
+          >
+            <p
+              class="font-bold text-3xl w-386px mt-8 ml-8 sm:"
+              style="font-family: inter; background-color: white"
+            >
+              List your store on PetnVet
+            </p>
+            <p
+              style="font-family: inter"
+              class="font-normal font-normal text-xl w-[386px] mt-4 mb-8 ml-8"
+            >
+              We are providing a digital platform for vendors to set their shops
+              on. Interested in expanding your business? Let’s start our
+              partnership today!
+            </p>
+            <button
+              class="text-base text-white px-6 py-4 mt-4 rounded-md ml-8 rounded"
+              style="font-family: inter; background-color: #7749f8"
+            >
+              Open Shop
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="pt-4 content-center sm:bg-cover"
+      style="background-color: #212529"
+    >
+      <a href="#"
+        ><img
+          src="./images/Logo (1).svg"
+          alt=""
+          class="w-28 md:w-48 ml-auto mr-auto"
+      /></a>
+      <ul
+        class="justify-center lg:flex mt-4 sm:grid grid-col-1 align-center text-center"
+      >
+        <li>
+          <a href="">
+            <p
+              class="font-normal mt-2"
+              style="font-family: inter; color: #ffffff"
+            >
+              Open Shop
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p
+              style="font-family: inter; color: #ffffff"
+              class="font-normal text-base lg:ml-[3rem] sm:mt-2"
+            >
+              Contact us
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p
+              style="font-family: inter; color: #ffffff"
+              class="font-normal text-base lg:ml-[3rem] sm:mt-2"
+            >
+              Terms & Conditions
+            </p>
+          </a>
+        </li>
+      </ul>
+      <p
+        style="font-family: inter; color: #ffffff"
+        class="font-normal text-xs py-7 text-center"
+      >
+        © 2024. All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>
